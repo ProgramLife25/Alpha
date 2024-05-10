@@ -4,7 +4,7 @@ import json
 import ollama
 import pyttsx3
 engine = pyttsx3.init()
-with open("D:\\assistant web app\\AI_animation.json","r") as file:
+with open("AI_animation.json","r") as file:
     url = json.load(file)
 st_lottie(url,height=500)
 prompt = st.chat_input("Ask anything....")
